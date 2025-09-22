@@ -1,24 +1,34 @@
 package com.example.application.views.inicio.tiendaLibros;
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 7163112ad609972c9e3a8143edf88ad1190c01f5
 public abstract class Libro {
 
     private String titulo;
     private String autor;
     private String isbn;
-    private double precioVenta;
-    private double precioRenta;
-    private boolean disponible;
+    private Editorial editorial;
+    private Categoria categoria;
 
-    public Libro(String titulo, String autor, String isbn, double precioVenta, double precioRenta ,boolean disponible) {
+    public Libro(String titulo, String autor, String isbn, Editorial editorial, Categoria categoria) {
         this.titulo = titulo;
         this.autor = autor;
         this.isbn = isbn;
-        this.precioVenta = precioVenta;
-        this.precioRenta = precioRenta;
-        this.disponible = disponible;
+        this.editorial = editorial;
+        this.categoria = categoria;
     }
 
+<<<<<<< HEAD
+    public String getTitulo() { return titulo; }
+    public String getAutor() { return autor; }
+    public String getIsbn() { return isbn; }
+    public Editorial getEditorial() { return editorial; }
+    public Categoria getCategoria() { return categoria; }
+
+    public abstract String getFormato();
+=======
     
     
     public String getTitulo() {
@@ -71,9 +81,11 @@ public abstract class Libro {
 
 
     public abstract double calcularPrecio(boolean esVenta);
+>>>>>>> 7163112ad609972c9e3a8143edf88ad1190c01f5
 
     @Override
     public String toString() {
-        return String.format("%s — %s (ISBN: %s)", titulo, autor, isbn);
+        return titulo + " - " + autor + " (" + editorial.getNombre() + ") [" + getFormato() + "]";
     }
 }
+
