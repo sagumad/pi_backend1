@@ -1,5 +1,9 @@
 package com.example.application.views.inicio.tiendaLibros;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7163112ad609972c9e3a8143edf88ad1190c01f5
 public abstract class Libro {
 
     private String titulo;
@@ -16,6 +20,7 @@ public abstract class Libro {
         this.categoria = categoria;
     }
 
+<<<<<<< HEAD
     public String getTitulo() { return titulo; }
     public String getAutor() { return autor; }
     public String getIsbn() { return isbn; }
@@ -23,6 +28,60 @@ public abstract class Libro {
     public Categoria getCategoria() { return categoria; }
 
     public abstract String getFormato();
+=======
+    
+    
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public double getPrecioVenta() {
+        return precioVenta;
+    }
+
+    public void setPrecioVenta(double precioVenta) {
+        this.precioVenta = precioVenta;
+    }
+
+    public double getPrecioRenta() {
+        return precioRenta;
+    }
+
+    public void setPrecioRenta(double precioRenta) {
+        this.precioRenta = precioRenta;
+    }
+
+    public boolean getEstado() {
+        return disponible;
+    }
+
+    public void setEstado(boolean estado) {
+        this.disponible = estado;
+    }
+
+
+    public abstract double calcularPrecio(boolean esVenta);
+>>>>>>> 7163112ad609972c9e3a8143edf88ad1190c01f5
 
     @Override
     public String toString() {
