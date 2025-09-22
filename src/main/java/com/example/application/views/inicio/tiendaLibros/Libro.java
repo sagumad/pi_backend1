@@ -1,8 +1,6 @@
 package com.example.application.views.inicio.tiendaLibros;
 
-/**
- * Clase abstracta Libro.
- */
+
 public abstract class Libro {
 
     private String titulo;
@@ -21,7 +19,7 @@ public abstract class Libro {
         this.disponible = disponible;
     }
 
-    // Encapsulamiento: getters y setters
+    
     
     public String getTitulo() {
         return titulo;
@@ -71,10 +69,6 @@ public abstract class Libro {
         this.disponible = estado;
     }
 
-    /**
-     * Método polimórfico: cada subclase define cómo se calcula el precio final
-     * dependiendo si es venta o renta.
-     */
 
     public abstract double calcularPrecio(boolean esVenta);
 
