@@ -18,3 +18,46 @@ vaadin-side-nav-item vaadin-icon {
 [slot="drawer"]:is(header, footer):is(:empty) {
   display: none;
 }
+
+:root {
+  --app-bg: #f6fbff;
+  --app-accent: #a8d0e6;
+  --app-accent-2: #cbeefd;
+  --app-text: #08306b;
+  --app-button-bg: #bcdff6;
+}
+
+body {
+  background-color: var(--app-bg);
+  color: var(--app-text);
+}
+
+vaadin-button {
+  background-color: var(--app-button-bg);
+  color: var(--app-text);
+  border-radius: 6px;
+  padding: 0.6em 1em;
+}
+
+vaadin-grid {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.book-card {
+  background: linear-gradient(180deg, var(--app-accent-2), #ffffff);
+  border: 1px solid rgba(8,48,107,0.06);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(8,48,107,0.04);
+  padding: 12px;
+  display: inline-block;
+  text-align: center;
+}
+.book-card h4 {
+  color: var(--app-text);
+  margin: 8px 0 4px 0;
+}
+.book-card span {
+  color: var(--app-text);
+  font-size: 0.9em;
+}

@@ -18,14 +18,14 @@ public class InicioView extends VerticalLayout {
     public InicioView() {
         setSpacing(false);
 
-        Image img = new Image("images/empty-plant.png", "placeholder plant");
+    Image img = new Image("images/empty-plant.png", "planta de ejemplo");
         img.setWidth("200px");
         add(img);
 
-        H2 header = new H2("This place intentionally left empty");
-        header.addClassNames(Margin.Top.XLARGE, Margin.Bottom.MEDIUM);
-        add(header);
-        add(new Paragraph("It’s a place where you can grow your own UI 🤗"));
+    H2 header = new H2("Bienvenido");
+    header.addClassNames(Margin.Top.XLARGE, Margin.Bottom.MEDIUM);
+    add(header);
+    add(new Paragraph("Aquí puedes ver y gestionar libros"));
 
         setSizeFull();
         setJustifyContentMode(JustifyContentMode.CENTER);
